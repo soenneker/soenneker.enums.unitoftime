@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\Soenneker.Enums.UnitOfTime.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Enums.UnitOfTime.csproj" />
     </ItemGroup>
 
 </Project>
