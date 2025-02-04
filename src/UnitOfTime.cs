@@ -1,11 +1,11 @@
-using Ardalis.SmartEnum;
+using Soenneker.SmartEnum.Named;
 
 namespace Soenneker.Enums.UnitOfTime;
 
 /// <summary>
 /// An enumerator for describing an interval of time
 /// </summary>
-public sealed class UnitOfTime : SmartEnum<UnitOfTime>
+public sealed class UnitOfTime : NamedSmartEnum<UnitOfTime>
 {
     public static readonly UnitOfTime Tick = new(nameof(Tick), 0);
     public static readonly UnitOfTime Nanosecond = new(nameof(Nanosecond), 1);
