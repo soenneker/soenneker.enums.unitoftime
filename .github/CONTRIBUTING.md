@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Enums.UnitOfTime
+﻿# Contributing to Soenneker.Enums.UnitOfTime
 
 We're excited that you're interested in contributing!
 
