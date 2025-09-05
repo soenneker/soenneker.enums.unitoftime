@@ -1,10 +1,12 @@
 using Intellenum;
+using Soenneker.Attributes.PublicOpenApiObject;
 
 namespace Soenneker.Enums.UnitOfTime;
 
 /// <summary>
 /// An enumerator for describing an interval of time
 /// </summary>
+[PublicOpenApiObject]
 [Intellenum<string>]
 public partial class UnitOfTime
 {
