@@ -8,7 +8,7 @@ namespace Soenneker.Enums.UnitOfTime;
 /// </summary>
 [PublicOpenApiObject]
 [Intellenum<string>]
-public partial class UnitOfTime
+public sealed partial class UnitOfTime
 {
     public static readonly UnitOfTime Tick = new(nameof(Tick));
     public static readonly UnitOfTime Nanosecond = new(nameof(Nanosecond));
