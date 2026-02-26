@@ -1,4 +1,4 @@
-using Intellenum;
+using Soenneker.Gen.EnumValues;
 using Soenneker.Attributes.PublicOpenApiObject;
 
 namespace Soenneker.Enums.UnitOfTime;
@@ -7,7 +7,7 @@ namespace Soenneker.Enums.UnitOfTime;
 /// An enumerator for describing an interval of time
 /// </summary>
 [PublicOpenApiObject]
-[Intellenum<string>]
+[EnumValue<string>]
 public sealed partial class UnitOfTime
 {
     public static readonly UnitOfTime Tick = new(nameof(Tick));
