@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Enums.UnitOfTime.Tests;
 
-[Collection("Collection")]
-public class UnitOfTimeTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class UnitOfTimeTests : HostedUnitTest
 {
-    public UnitOfTimeTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public UnitOfTimeTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
