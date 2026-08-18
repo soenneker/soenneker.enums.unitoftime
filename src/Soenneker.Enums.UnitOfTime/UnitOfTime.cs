@@ -4,62 +4,62 @@ using Soenneker.Attributes.PublicOpenApiObject;
 namespace Soenneker.Enums.UnitOfTime;
 
 /// <summary>
-/// An enumerator for describing an interval of time
+/// Identifies the unit used to express a duration, interval, or calendar period.
 /// </summary>
 [PublicOpenApiObject]
 [EnumValue<string>]
 public sealed partial class UnitOfTime
 {
     /// <summary>
-    /// The tick.
+    /// A .NET time tick, equal to 100 nanoseconds.
     /// </summary>
     public static readonly UnitOfTime Tick = new(nameof(Tick));
     /// <summary>
-    /// The nanosecond.
+    /// One billionth of a second.
     /// </summary>
     public static readonly UnitOfTime Nanosecond = new(nameof(Nanosecond));
     /// <summary>
-    /// The microsecond.
+    /// One millionth of a second.
     /// </summary>
     public static readonly UnitOfTime Microsecond = new(nameof(Microsecond));
     /// <summary>
-    /// The millisecond.
+    /// One thousandth of a second.
     /// </summary>
     public static readonly UnitOfTime Millisecond = new(nameof(Millisecond));
     /// <summary>
-    /// The second.
+    /// One second.
     /// </summary>
     public static readonly UnitOfTime Second = new(nameof(Second));
     /// <summary>
-    /// The minute.
+    /// One minute.
     /// </summary>
     public static readonly UnitOfTime Minute = new(nameof(Minute));
     /// <summary>
-    /// The hour.
+    /// One hour.
     /// </summary>
     public static readonly UnitOfTime Hour = new(nameof(Hour));
     /// <summary>
-    /// The day.
+    /// One day.
     /// </summary>
     public static readonly UnitOfTime Day = new(nameof(Day));
     /// <summary>
-    /// The week.
+    /// One week.
     /// </summary>
     public static readonly UnitOfTime Week = new(nameof(Week));
     /// <summary>
-    /// The month.
+    /// One calendar month.
     /// </summary>
     public static readonly UnitOfTime Month = new(nameof(Month));
     /// <summary>
-    /// The quarter.
+    /// One calendar quarter.
     /// </summary>
     public static readonly UnitOfTime Quarter = new(nameof(Quarter));
     /// <summary>
-    /// The year.
+    /// One calendar year.
     /// </summary>
     public static readonly UnitOfTime Year = new(nameof(Year));
     /// <summary>
-    /// The decade.
+    /// Ten calendar years.
     /// </summary>
     public static readonly UnitOfTime Decade = new(nameof(Decade));
 }
